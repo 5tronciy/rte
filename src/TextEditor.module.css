@@ -1,18 +1,25 @@
 .editorContainer {
   display: flex;
+  flex-wrap: nowrap;
+  /*justify-content: flex-end; */
+  background-color: #e5e5e5;
 }
 
 .editor {
-  flex: 0 1 600px;
+  /* flex: 1 1 600px; */
+  height: 100vh;
+  width: 800px;
 }
 
 .textArea {
   margin: 60px;
   background-color: #fff;
-  height: 90vh;
+  height: 720px;
+  max-width: 608px;
 }
 
 .sideBar {
-  flex: 0 0 270px;
+  /* flex: 0 0 240px; */
+  width: 240px;
   background-color: #fff;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import cn from "classnames";
-import LinkIcon from "@material-ui/icons/Link";
 import s from "./InlineToolbar.module.css";
+import LinkIcon from "@material-ui/icons/Link";
 
 const INLINE_STYLES = [
   { label: "B", style: "BOLD" },
@@ -11,7 +11,6 @@ const INLINE_STYLES = [
 
 export const InlineToolbar = ({ editorState, onToggle, position, setLink }) => {
   const currentStyle = editorState.getCurrentInlineStyle();
-  console.log(currentStyle);
   return (
     <div className={s.toolbar} style={position}>
       <ul className={s.toolbarItems}>
